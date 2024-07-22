@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentación del Proyecto</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+  <h1>Documentación del Proyecto</h1>
+  <nav id="top-nav">
+    <ul>
+      <li><a href="#descripcion">Descripción</a></li>
+      <li><a href="#instalacion">Instalación</a></li>
+      <li><a href="#uso">Uso</a></li>
+      <li><a href="#estructura">Estructura</a></li>
+      <li><a href="#codigo">Código</a></li>
+      <li><a href="#contribuciones">Contribuciones</a></li>
+      <li><a href="#licencia">Licencia</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="container">
+  <main>
+    <section id="descripcion">
+      <h2>Descripción del Proyecto</h2>
+      <p>Breve descripción del proyecto, su propósito y funcionalidades principales.</p>
+    </section>
+
+    <section id="instalacion">
+      <h2>Instalación</h2>
+      <p>Instrucciones sobre cómo instalar y configurar el proyecto.</p>
+      <pre><code># Ejemplo de instalación
+git clone https://github.com/usuario/proyecto.git
+cd proyecto
+npm install</code></pre>
+    </section>
+
+    <section id="uso">
+      <h2>Uso</h2>
+      <p>Instrucciones sobre cómo ejecutar y utilizar el proyecto.</p>
+      <pre><code># Ejemplo de uso
+npm start</code></pre>
+    </section>
+
+    <section id="estructura">
+      <h2>Estructura del Proyecto</h2>
+      <p>Descripción de la estructura de directorios y archivos del proyecto.</p>
+      <pre><code>proyecto/
+├── src/
+│   ├── index.js
+│   ├── app.js
+│   └── components/
+│       └── header.js
+├── public/
+│   └── index.html
+├── package.json
+└── README.md</code></pre>
+    </section>
+
+    <section id="codigo">
+      <h2>Documentación del Código</h2>
+      <h3>Archivo: <code>src/index.js</code></h3>
+      <pre><code>/**
+ * Punto de entrada principal de la aplicación.
+ * @module index
+ */
+
+import App from './app';
+
+/**
+ * Inicializa la aplicación.
+ */
+const init = () => {
+  App.start();
+};
+
+init();</code></pre>
+
+      <h3>Archivo: <code>src/app.js</code></h3>
+      <pre><code>/**
+ * Módulo principal de la aplicación.
+ * @module app
+ */
+
+/**
+ * Inicia la aplicación.
+ */
+const start = () => {
+  console.log('Aplicación iniciada');
+};
+
+export default {
+  start,
+};</code></pre>
+    </section>
+
+    <section id="contribuciones">
+      <h2>Contribuciones</h2>
+      <p>Instrucciones sobre cómo contribuir al proyecto.</p>
+      <ol>
+        <li>Haz un fork del proyecto.</li>
+        <li>Crea una nueva rama (<code>git checkout -b feature/nueva-funcionalidad</code>).</li>
+        <li>Realiza los cambios necesarios y commitea (<code>git commit -m 'Añadir nueva funcionalidad'</code>).</li>
+        <li>Sube los cambios (<code>git push origin feature/nueva-funcionalidad</code>).</li>
+        <li>Abre un Pull Request.</li>
+      </ol>
+    </section>
+
+    <section id="licencia">
+      <h2>Licencia</h2>
+      <p>Información sobre la licencia bajo la cual se distribuye el proyecto.</p>
+      <p>Este proyecto está licenciado bajo la Licencia MIT - ver el archivo <a href="LICENSE">LICENSE</a> para más detalles.</p>
+    </section>
+  </main>
+</div>
+
+<footer>
+  <p>&copy; 2024 Nombre del Proyecto. Todos los derechos reservados.</p>
+</footer>
+
+<button id="scrollToTopBtn">↑</button>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
